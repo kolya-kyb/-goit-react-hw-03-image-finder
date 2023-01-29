@@ -1,5 +1,13 @@
+import PropTypes from 'prop-types';
+import { ButtonStyled } from './Button.styled';
+
 const Button = ({ handleClick, children }) => {
-  return <button onClick={handleClick}>{children}</button>;
+  return <ButtonStyled onClick={handleClick}>{children}</ButtonStyled>;
 };
 
 export default Button;
+
+Button.propTypes = {
+  handleClick: PropTypes.func.isRequired,
+  children: PropTypes.element.isRequired,
+};
