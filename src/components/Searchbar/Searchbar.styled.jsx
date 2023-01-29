@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { Field, Form, Formik } from 'formik';
+import { Field, Form } from 'formik';
 
 import serchImg from '../../img/search.svg';
 
