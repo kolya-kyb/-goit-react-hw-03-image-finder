@@ -17,6 +17,12 @@ ImageGalleryItem.defaultProps = {
 };
 
 ImageGalleryItem.propTypes = {
-  items: PropTypes.array.isRequired,
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      largeImageURL: PropTypes.string.isRequired,
+      webformatURL: PropTypes.string.isRequired,
+    })
+  ).isRequired,
   handleClick: PropTypes.func.isRequired,
 };
